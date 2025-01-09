@@ -20,12 +20,21 @@ function firstletter (listanomi) {
     // riturn capolettera
     return capoletteralista
 }
-        
+
+// funzione firstletter utilizzando array function e .map
+const firstletter2 = listanomi => listanomi.map(nome => `"${nome.charAt(0)}"`).join(', ');   
+
+// spiegazione
+// listanomi.map --> serve per creare un nuovo array applicando una funzione a ogni elemento di un array originale, la funzione che gli passiamo viene applicata su ogni elemento dell'array
+// nome --> in questo caso usiamo nome come elemento a cui effettuare la data azione
+// `"${nome.charAt(0)}"`) --> azione effettuata
+// .join(', '); --> facciamo diventare l'array una stringa
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(firstletter(names));
+console.log(firstletter2(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
