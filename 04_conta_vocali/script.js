@@ -1,8 +1,6 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
 const word = 'javascript';
-const prova = 'supercalifragilistichespiralidoso'
-
 
 // Dichiara la funzione qui.
 // creo una funzione vowelscount
