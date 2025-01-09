@@ -14,9 +14,13 @@ function saluto (nome){
     return hello
 }
 
+// funzione saluto con argomento 'nome' con array function
+const saluto2 = nome => `ciao ${nome}`; 
+
+
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(saluto(userName)); 
+console.log(saluto2(userName)); 
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
