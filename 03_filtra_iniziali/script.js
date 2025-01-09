@@ -7,7 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // creiamo una funzione filtro con argomenti (lista, lettera)
 function filter (lista,lettera){
 
-    // creiamo una array vutox di nome filteredlist inizialmente vuota
+    // creiamo una array vuoto di nome filteredlist inizialmente vuota
     let filteredlist = [];
 
     // creiamo un ciclo di analisi della lista
@@ -28,13 +28,17 @@ function filter (lista,lettera){
 return filteredlist;
 
 }
-    // se l'elemento inizia per l'argomento lettera salviamo l'elemento nella variabile
-    // altrimenti eliminiamola
 
+// funzione filtro con argomenti (lista, lettera) sviluppata con array function
+const filter2 = (lista, lettera) => lista.filter(element => element.charAt(0) === lettera);
+
+// Spiegazione
+// lista.filter --> crea un nuovo array con tutti gli elementi che soddisfano una determinata condizione
+// (element => element.charAt(0) === lettera) --> è la condizione che verifica se la prima lettera corrisponde alla lettera di filtro
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(filter(names, 'A'));
+console.log(filter2(names, 'A'));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
